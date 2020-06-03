@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <h1><a href="/">홈으로</a></h1>
+    <h2><a href="/greeting">환영</a></h2>
+
+    <form action="/login" method="post">
+        <legend>로그인</legend>
+        <input type="text" name="loginId" id="loginId">
+        <input type="password" name="loginPw" id="loginPw">
+        <input type="submit" value="로그인">
+    </form>
+    <form action="/join" method="post">
+        <legend>회원가입</legend>
+        <input type="text" name="joinId" id="joinId">
+        <input type="password" name="joinPw" id="joinPw">
+        <input type="submit" value="회원가입">
+    </form>
+
+</body>
+</html>
